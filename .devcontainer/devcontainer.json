@@ -1,0 +1,15 @@
+{
+  "name": "My Website Dev",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [5500],
+  "runArgs": ["--name", "my-website-dev"],
+  "postCreateCommand": "npm install -g live-server",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}

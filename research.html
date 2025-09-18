@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Research</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="#content" class="skip-link">Skip to content</a>
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>YOUR&nbsp;NAME</span>
+      </a>
+      <label class="burger" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+      <input type="checkbox" id="nav-toggle" hidden>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="assets/cv.pdf" target="_blank">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container" role="main">
+    <section class="panel">
+      <h1>Research</h1>
+      <p class="lead">One-paragraph overview of your research agenda.</p>
+      <h2>Areas</h2>
+      <ul class="clean">
+        <li><strong>Area 1:</strong> Short description and current questions.</li>
+        <li><strong>Area 2:</strong> …</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <small>© <span id="year"></span> Your Name • <a href="mailto:you@example.com">you@example.com</a></small>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
