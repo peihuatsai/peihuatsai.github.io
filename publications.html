@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name — Publications</title>
+  <title>Pei-Hua Tsai — Publications</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="container navbar">
       <a class="brand" href="index.html" aria-label="Home">
         <span class="brand-badge" aria-hidden="true"></span>
-        <span>YOUR&nbsp;NAME</span>
+        <span>Pei-Hua Tsai</span>
       </a>
       <label class="burger" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
       <input type="checkbox" id="nav-toggle" hidden>
@@ -28,14 +28,25 @@
 
   <main id="content" class="container" role="main">
     <section class="panel">
-      <h1>Publications</h1>
-      <ul class="clean">
-        <li>
-          <strong>Paper Title.</strong> Your Name, Coauthors. <em>Conference/Journal</em>, Year. 
-          [<a href="#">PDF</a>] [<a href="#">BibTeX</a>] [<a href="#">DOI</a>]
-        </li>
-        <li>…</li>
-      </ul>
+      <!-- Filter buttons -->
+      <nav class="filter-bar" aria-label="Filter by year">
+        <button class="filter-btn" data-year="all">All</button>
+        <button class="filter-btn" data-year="2025">2025</button>
+        <button class="filter-btn" data-year="2024">2024</button>
+      </nav>
+
+      <!-- Publications list -->
+      <section class="publications">
+        <article class="pub" data-year="2024">
+          <h2><a href="https://dl.acm.org/doi/10.1145/3613904.3642520" target="_blank">“I Prefer Regular Visitors to Answer My Questions”: Users’ Desired Experiential Background of Contributors for Location-based Crowdsourcing Platform</a></h2>
+          <p> Fang-Yu Lin*, <strong>Pei-Hua Tsai</strong>*, Chia-Yi Lee, Yi-Ting Ho, Yao-Kuang Chen, Yu-Chun Yen, Yung-Ju Chang</p>
+          <p>CHI '24</p>
+        </article>
+
+
+
+        <!-- more publications here -->
+      </section>
     </section>
   </main>
 
@@ -45,5 +56,7 @@
     </div>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
+
+  <script src="publications.js"></script>
 </body>
 </html>
